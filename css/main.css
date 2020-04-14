@@ -1,0 +1,503 @@
+/* * * * * * * Specification * * * * * * */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+ul, li {
+  display: block;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  color: #718bfb;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+h3 {
+  color: black;
+  font-size: 24px;
+}
+
+button {
+  border: 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+button:hover {
+  box-shadow: 0px 1px 1px 0px #3d50a0;
+}
+
+button:active {
+  box-shadow: 0px 0px 3px 0px #3d50a0 inset;
+}
+
+button:focus {
+  outline: 0;
+}
+
+img {
+  user-select: none;
+}
+
+.white {
+  color: white;
+}
+
+.orange {
+  color: #de6a46;
+}
+
+.blue {
+  color: #718bfb;
+}
+
+/* * * * * * * Header * * * * * * */
+
+.header {
+  background: #648cff;
+  color: #fff;
+  padding-top: 37px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu__item {
+  margin: 5px 0 0;
+}
+
+.menu__item a {
+  color: #fffa;
+  font-size: 18px;
+}
+
+.menu__item a:hover {
+  color: #fff;
+}
+
+.icons__item{
+  margin: 0 20px;
+}
+
+.icons__item a {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* * * * * * * Front screen * * * * * * */
+
+.front {
+  color: #fff;
+  padding-top: 130px;
+  padding-bottom: 65px;
+  background: #648cff  url(../img/front-wave1.svg) no-repeat bottom;
+  position: relative;
+}
+
+.front::after {
+  content: "";
+  position: absolute;
+  background: url(../img/front-wave2.svg) no-repeat bottom;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.invitation {
+  padding-bottom: 50px;
+}
+
+.invitation h1 {
+  padding-top: 95px;
+}
+
+.invitation p {
+  display: inline-block;
+  font-size: 18px;
+  max-width: 400px;
+  margin-top: 35px;
+}
+
+.invitation__buttons {
+  font-size: 18px;
+}
+
+.invitation__buttons__download {
+  background: #FC6A42;
+  display: inline-block;
+  padding: 13px 38px;
+  border-radius: 7px;
+}
+
+.invitation__buttons__features {
+  background: #5066c5;
+  display: inline-block;
+  padding: 13px 38px;
+  margin-left: 13px;
+  border-radius: 7px;
+}
+
+.phone-image {
+
+}
+
+.to-down-cirle {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 20px 0 0;
+  color: #e0555a;
+  font-size: 20px;
+  text-align: center;
+  line-height: 2.5em;
+}
+
+/* * * * * * * App info * * * * * * */
+
+.app-info {
+  background-image: url(../img/wave.svg), linear-gradient(90deg, #ededf5 0.29%, #ffffff 0.29%, #ffffff 50%, #ededf5 50%, #ededf5 50.29%, #ffffff 50.29%, #ffffff 100%);
+  background-size: auto, 350.00px 350.00px;
+  background-repeat: no-repeat, repeat;
+  padding-top: 190px;
+}
+
+.app-info-title {
+  text-align: center;
+}
+
+.app-info h4 {
+  color: #989898;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.features-title {
+  margin-bottom: 130px;
+}
+
+.features-block img {
+  padding-top: 5px;
+  align-self: flex-start;
+  margin-right: 19px;
+}
+
+.features-block p {
+  margin-top: 16px;
+  color: #acacac;
+  font-size: 16px;
+}
+
+.widgets-title {
+  margin-top: 200px;
+  margin-bottom: 70px;
+}
+
+/* Widget slider */
+
+.slider {
+  width: 317px;
+  height: 565px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slide-single {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  transition: all ease 1s;
+  left: 0;
+  top: 0;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
+  transform: scale(.8);
+}
+
+.slider-left-arrow, .slider-right-arrow {
+  text-align: center;
+  height: 565px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  margin: 0 15px;
+}
+
+.slider-left-arrow:hover, .slider-right-arrow:hover {
+  background: rgba(195, 206, 229, 0.25);
+}
+
+.slider-left-arrow:active, .slider-right-arrow:active {
+  background: rgba(195, 206, 229, 0.5);
+}
+
+/* * * * * */
+
+/* * * * * * * Screenshots * * * * * * * */
+
+.screenshots-title {
+  text-align: center;
+  margin-top: 145px;
+  margin-bottom: 200px;
+}
+
+.screenshot-icon {
+  margin-bottom: 45px;
+}
+
+.screenshot-text {
+  font-size: 24px;
+  color: #393b54;
+  margin-top: 20px;
+}
+
+.screenshot-picture {
+  display: block;
+  margin: 0 auto;
+}
+
+.cloudy-screenshot-block {
+  max-width: 500px;
+  margin-left: 78px;
+  margin-top: 85px;
+}
+
+.screenshots-sun-section {
+  padding-top: 265px;
+}
+
+.sun-screenshot-block {
+  margin-top: 100px;
+  max-width: 500px;
+}
+
+.screenshots-rain-section {
+  padding-top: 270px;
+}
+
+.rain-screenshot-block {
+  max-width: 500px;
+  margin-top: 70px;
+  margin-left: 100px;
+}
+
+/* * * * * * * Reviews * * * * * * * */
+
+.reviews-title {
+  margin-top: 120px;
+}
+
+.review-blocks {
+  padding-bottom: 100px;
+}
+
+.review-block {
+  padding: 50px 0 30px;
+  position: relative;
+  margin-top: 90px;
+}
+
+.review-block::before {
+  content: '“';
+  position: absolute;
+  top: 30px;
+  left: -7px;
+  font-size: 142px;
+  color: #718bfb;
+  line-height: .4em;
+}
+
+.review-block::after {
+  content: '“';
+  position: absolute;
+  bottom: -25px;
+  right: 10px;
+  font-size: 142px;
+  color: #718bfb;
+  line-height: .4em;
+}
+
+.review-block__text {
+  font-size: 24px;
+  color: #393b54;
+}
+
+.review-block__author {
+  font-size: 18px;
+  color: #393b54;
+}
+
+/* * * * * * * Download the app * * * * * * * */
+
+.download {
+  background-image: linear-gradient(90deg, #8ea3fa 0.29%, #718bfb 0.29%, #718bfb 50%, #8ea3fa 50%, #8ea3fa 50.29%, #718bfb 50.29%, #718bfb 100%);
+  background-size: 350.00px 350.00px;
+  height: 460px;
+  overflow: hidden;
+}
+
+.download-block__title {
+  font-size: 34px;
+  margin-top: 120px;
+}
+
+.download-block__text {
+  font-size: 18px;
+  margin-top: 30px;
+  max-width: 370px;
+  line-height: 1.2em;
+}
+
+.download-buttons {
+  margin-top: 30px;
+}
+
+.download-buttons a {
+  margin-right: 5px;
+  height: 45px;
+  display: block;
+}
+
+.download-buttons__app-store {
+  background: url('../img/download-button-app-store.png') no-repeat;
+  width: 150px;
+}
+
+.download-buttons__google {
+  background: url('../img/download-button-google.png') no-repeat;
+  width: 140px;
+}
+
+.download-picture {
+  position: relative;
+}
+
+.download-picture__middle {
+  margin-top: 60px;
+  position: absolute;
+}
+
+.download-picture__left {
+  margin-top: 140px;
+  position: absolute;
+  left: -200px;
+  filter: blur(4px);
+}
+
+.download-picture__right {
+  margin-top: 140px;
+  position: absolute;
+  right: -140px;
+  filter: blur(4px);
+}
+
+/* * * * * * * Footer * * * * * * * */
+
+.footer {
+  background: #393b54;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer a {
+  color: #b4b4c6;
+}
+
+.footer a:hover {
+  color: #ffffff;
+}
+
+.footer-menu {
+  font-size: 18px;
+}
+
+.footer-icons {
+  font-size: 24px;
+}
+
+.footer-icons__item {
+  margin: 0 20px;
+}
+
+.footer-menu__item {
+  box-sizing: border-box;
+  padding: 4px 0 0;
+  height: 50px;
+}
+
+.separator {
+  background: #464868;
+  height: 1px;
+  width: 100%;
+  margin-top: 85px;
+}
+
+.rights {
+  font-size: 16px;
+  color: #585b84;
+  margin-top: 50px;
+}
+
+/* * * * * * * Media queries * * * * * * */
+
+@media screen and (max-width: 992px) {
+  .header, .front, .footer-logo, .footer {
+    text-align: center;
+  }
+
+  .slider {
+    overflow: hidden;
+  }
+
+  .cloudy-screenshot-block, .sun-screenshot-block, .rain-screenshot-block {
+    margin: 85px auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider-left-arrow, .slider-right-arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .invitation__buttons__features {
+    margin: 10px 0;
+  }
+}
